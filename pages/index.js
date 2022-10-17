@@ -1,4 +1,4 @@
-import ComingSoon from "../components/home-page/coming-soon"
+// import ComingSoon from "../components/home-page/coming-soon"
 import classes from "./home.module.css"
 
 export default function HomePage(props) {
