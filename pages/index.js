@@ -10,13 +10,12 @@ export default function HomePage(props) {
       {/* <h1>Lufa Media Digital Marketing Agency</h1> */}
       <h3>COMING SOON</h3>
       {/* <ComingSoon days={30} hours={15} minutes={30} seconds={10} /> */}
+      <ComingSoon days={30} hours={20} minutes={15} seconds={10} />
       <p>
-        Only 30 days left to the official launch of
-        Lufa Media Digital Marketing Agency.
+        <span className={classes.lufaspan}>Lufa Media</span> is only days away from its official launch.
         If you want to be updated on the details of the launch,
         kindly leave your email below.
       </p>
-      <ComingSoon days={30} hours={20} minutes={15} seconds={10} />
       <form className={classes.form} onSubmit={handleSubmit}>
         <div className={classes.form}>
           <input type="email" placeholder="Email address" />
