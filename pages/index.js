@@ -4,7 +4,10 @@ import classes from "./home.module.css"
 export default function HomePage(props) {
   return (
     <div className={classes.homeBox}>
-      <h1>Lufa Media Digital Marketing Agency</h1>
+      <nav className={classes.nav}>
+        <img src="/images/onDark.png" alt="" />
+      </nav>
+      {/* <h1>Lufa Media Digital Marketing Agency</h1> */}
       <h3>COMING SOON</h3>
       {/* <ComingSoon days={30} hours={15} minutes={30} seconds={10} /> */}
       <p>

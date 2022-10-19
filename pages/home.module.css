@@ -1,3 +1,17 @@
+.nav {
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.nav img {
+    width: 95px;
+}
+
 .homeBox {
     display: flex;
     flex-direction: column;
@@ -6,8 +20,10 @@
     /* background-color: red; */
     text-align: center;
     padding: 20px;
+    padding-top: 90px;
     /* gap: 20px; */
     height: 100vh;
+    position: relative;
 }
 
 .homeBox h1 {
@@ -48,9 +64,22 @@
 }
 
 .form input {
-    padding: 9px;
+    padding: 12px;
     border: none;
     outline: none;
-    background-color: rgb(36, 40, 80);
+    /* background-color: rgb(36, 40, 80); */
+    background-color: #17191f;
     color: #fff;
+}
+
+.form button {
+    padding: 12px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+.form p {
+    margin: 0;
+    padding: 0;
 }
