@@ -1,5 +1,6 @@
 .comingBox {
     padding: 15px;
+    margin-bottom: 20px;
     display: flex;
     /* background-color: grey; */
     align-self: center;
@@ -29,8 +30,13 @@
     font-size: 40px;
 }
 
-.colon {
-    position: absolute;
-    right: -30%;
-    /* transform: translateX(10%); */
+
+.comingBox .colon {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    transform: translateY(20px);
+    /* height: 70%; */
+    font-weight: bold;
+    font-size: 20px;
 }
