@@ -6,7 +6,7 @@ class MyDocument extends Document{
       <Html lang='en'>
         <Head>
           <meta charset="UTF-8" />
-          <meta name="description" content="A digital marketing agency that helps businesses and start ups with their marketing tasks." />
+          <meta name="description" content="A digital marketing agency that helps businesses and start ups to efficiently market their products and services at affordable prices." />
           <meta name="keywords" content="Digital, Marketing, Agency" />
           <meta name="author" content="Republic Artist" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
