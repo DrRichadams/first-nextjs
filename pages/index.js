@@ -52,7 +52,7 @@ export default function HomePage(props) {
       <p>
         <span className={classes.lufaspan}>Lufa Media</span> is only days away from its official launch.
         If you want to be updated on the details of the launch,
-        kindly leave your email below.
+        kindly leave your email below. See you there!
       </p>
       <form className={classes.form} onSubmit={handleSubmit}>
         <div className={classes.form}>
