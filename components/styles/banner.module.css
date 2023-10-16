@@ -1,0 +1,53 @@
+.BannerContainer {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 150px;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 4rem;
+    font-family: Inter;
+    font-weight: black;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.story {
+    font-size: 1rem;
+    font-family: Roboto;
+    /* font-weight: light; */
+}
+
+.details_container {
+    /* background-color: pink; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* padding: 50px 150px; */
+    /* min-height: 100vh; */
+    max-width: 800px
+}
+
+.cta_btn_box {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cta_btn {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 15px 12px;
+    width: 100%;
+    min-width: 230px;
+    max-width: 400px;
+    border-radius: 6px;
+}
