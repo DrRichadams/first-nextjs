@@ -2,16 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 5px;
-  background-color: red;
+  /* padding: 5px; */
+  /* background-color: red; */
+  padding-top: 20px;
+  position: absolute;
+  width: 100%;
 }
 
 .nav_main nav { 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
-  background-color: blue;
+  /* padding: 5px; */
+  /* background-color: blue; */
   width: 100%;
   max-width: 600px;
  }
@@ -21,20 +24,22 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 5px;
-  background-color: yellow;
+  /* background-color: yellow; */
   width: 60%;
  }
 
 .nav_main li { 
   list-style: none;
+  font-family: Roboto, sans-serif;
+  font-size: .95rem;
  }
 
  .cta_btn_box {
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
   padding: 5px;
   width: 40%;
  }
@@ -43,6 +48,7 @@
     border: none;
     width: 120px;
     padding: 8px;
+    border-radius: 4px;
  }
 
  .nav_main img {
