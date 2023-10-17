@@ -11,7 +11,8 @@
     font-size: 4rem;
     font-family: Inter;
     font-weight: black;
-    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 5rem;
@@ -21,7 +22,8 @@
 .story {
     font-size: 1rem;
     font-family: Roboto;
-    /* font-weight: light; */
+    font-weight: 300;
+    line-height: 1.6rem;
 }
 
 .details_container {

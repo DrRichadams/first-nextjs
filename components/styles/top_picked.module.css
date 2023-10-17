@@ -1,0 +1,61 @@
+.top_picked_container {
+    min-height: 100vh;
+    padding: 50px 150px;
+}
+
+.header_title {
+    font-size: 3rem;
+    background: linear-gradient(90deg, rgb(108, 172, 214), rgb(255, 153, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.top_services_box {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.No1, .No2, .No3 {
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+
+.No2_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.top_service_details_box .badge {
+    background: linear-gradient(45deg,#FF00FB, #C4FFFB);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgb(165, 165, 165);
+    transform: translateY(-60px);
+}
+
+.top_service_details_box .badge p{
+    color: #fff;
+    font-family: Inter;
+    font-size: 3rem;
+}
+
+.top_service_details_box .badge h4{
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: .9rem;
+    color: #fff;
+}
