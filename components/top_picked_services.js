@@ -1,49 +1,36 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from "./styles/top_picked.module.css";
+import { AiFillStar } from 'react-icons/ai';
 
 const TopPicked = () => {
+    const [top_services] = useState([
+        {id: 1, nos: "Commercial Videos",img: "", short_descrip: "Video Advertisement", descrip: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia amet tempora facere iusto! Ab officiis voluptates perspiciatis explicabo eligendi perferendis dicta temporibus enim labore."},
+        {id: 2, nos: "Graphics Designing",img: "", short_descrip: "Poster Adverts and more", descrip: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia amet tempora facere iusto! Ab officiis voluptates perspiciatis explicabo eligendi perferendis dicta temporibus enim labore."},
+        {id: 3, nos: "Web Development",img: "Design & Development", short_descrip: "", descrip: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia amet tempora facere iusto! Ab officiis voluptates perspiciatis explicabo eligendi perferendis dicta temporibus enim labore."},
+        // {id: 4, nos: "Social Media Management",img: "", short_descrip: "Facebook, Instagram, X", descrip: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia amet tempora facere iusto! Ab officiis voluptates perspiciatis explicabo eligendi perferendis dicta temporibus enim labore."},
+    ])
   return (
     <div className={styles.top_picked_container}>
-        <h2 className={styles.header_title}>Top Picked Services</h2>
-        <div className={styles.top_services_box}>
-            <div className={styles.No1}>
-                <div className={styles.top_service_details_box}>
-                    <div className={styles.badge}><p>1</p><h4>Recommended</h4></div>
-                    <div className={styles.actual_details}>
-                        <h3 className={styles.top_service_title}>Video Commercials</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quos veritatis quae.ipsum dolor sit amet consectetur adipisicing elit. Vitae quos veritatis quaeipsum dolor sit amet consectetur adipisicing elit. Vitae quos veritatis quae </p>
-                        <button>Get Started</button>
+        <h2 className={styles.top_picked_title}>Our Top Picked Services</h2>
+        <div className={styles.top_services}>
+            {top_services.map((topie) => (
+                <div className={styles.top_service}>
+                    <div className={styles.top_title_box}>
+                        <div className={styles.top_service_num}>{topie.id}</div>
+                        <div className={styles.stars}>{Array(5).fill(1).map(() => (<AiFillStar size={25} />))}</div>
+                        <p className={styles.nos}>{topie.nos}</p>
+                    </div>
+                    <div className={styles.bottom_details}>
+                        <div className={styles.top_service_description}>
+                            <div>
+                                <p>{topie.short_descrip}</p>
+                                <p>{topie.descrip}</p>
+                            </div>
+                        </div>
+                        <button>EXPLORE OUR PREVIOUS WORK</button>
                     </div>
                 </div>
-                <div className={styles.top_service_video_box}>
-                    <img src="/images/img3.png" alt="" />
-                </div>
-            </div>
-            <div className={styles.No2_3}>
-                
-                <div className={styles.No2}>
-                    <div className={styles.img_No}>
-                        <p>2</p>
-                        <img src="/images/img1.png" alt="" />
-                    </div>
-                    <div className={styles.details_cta}>
-                        <h3 className={styles.top_service_title}>Graphics Designing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quidem commodi! Architecto facere voluptas quisquam amet, doloribus explicabo ullam perspiciatis.</p>
-                        <button>Get Started</button>
-                    </div>
-                </div>
-                <div className={styles.No3}>
-                    <div className={styles.img_No}>
-                        <p>3</p>
-                        <img src="/images/img2.png" alt="" />
-                    </div>
-                    <div className={styles.details_cta}>
-                        <h3 className={styles.top_service_title}>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quidem commodi! Architecto facere voluptas quisquam amet, doloribus explicabo ullam perspiciatis.</p>
-                        <button>Get Started</button>
-                    </div>
-                </div>
-            </div>
+            ))}
         </div>
     </div>
   )
