@@ -8,7 +8,8 @@
 }
 
 .title {
-    font-size: 4rem;
+    font-size: 2rem;
+    text-align: center;
     font-family: Inter;
     font-weight: 900;
     background: linear-gradient(45deg, #00dbde, #fc00ff);

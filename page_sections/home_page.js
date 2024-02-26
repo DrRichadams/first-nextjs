@@ -8,11 +8,11 @@ import Faq from '../components/faq';
 const Home = () => {
   return (
     <div>
-        <MainNavigation />
+        {/* <MainNavigation /> */}
         <Banner />
         {/* <TopPicked /> */}
-        <TopServices />
-        <Faq />
+        {/* <TopServices /> */}
+        {/* <Faq /> */}
     </div>
   )
 }
