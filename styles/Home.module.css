@@ -1,93 +1,219 @@
-.nav_main {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  /* padding: 5px; */
-  /* background-color: red; */
-  padding-top: 20px;
-  position: absolute;
-  width: 100%;
-}
-
-.nav_main nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* padding: 5px; */
-  /* background-color: blue; */
-  width: 100%;
-  max-width: 600px;
-}
-
-.nav_main ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 5px;
-  /* background-color: yellow; */
-  width: 60%;
-}
-
-.nav_main li {
-  list-style: none;
-  font-family: Roboto, sans-serif;
-  font-size: .95rem;
-}
-
-.cta_btn_box {
-  /* background-color: pink; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  padding: 5px;
-  width: 40%;
-}
-
-.cta_btn_box button {
-  border: none;
-  width: 120px;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-.nav_main img {
-  width: 100px;
-}
-
-.mobile_menu_btn {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 60px;
-  gap: 5px;
-}
-
-.mobile_menu_btn div {
-  width: 40px;
-  height: 5px;
-  background-color: black;
-  border-radius: 8px;
-}
-
-@media (max-width: 800px) {
-  .mobile_menu_btn {
+/* HEADER STYLES START */
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.navigation_container {
+    background-color: #fff;
+    width: 100%;
     display: flex;
-  }
-
-  .main_menu_items {
-    display: none !important;
-  }
-
-  .nav_main {
     justify-content: space-between;
-    /* background-color: red; */
-    padding-left: 25px;
-  }
+    align-items: center;
+    padding: 8px 20px;
+}
 
-  .nav_main nav {
-    flex-direction: row-reverse;
-  }
+.logo_box {
+    font-weight: 800;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+}
+
+
+.cta_menu_container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cta_menu_container button {
+    background-color: #FF5C35;
+    color: #f5f5f5;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+}
+
+.cta_menu_container img {
+    width: 50px;
+}
+
+.header_container {
+    padding: 8px 20px;
+    background: linear-gradient(#fff, #eaafff6b);
+    min-height: 80vh;
+}
+
+.cta_message {
+    color: #787878;
+    font-family: Roboto,sans-serif;
+}
+
+.header_story {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.proceed_arrow_container {
+    /* background-color: red; */
+    /* transform: translateY(60px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.proceed_arrow_container img{
+    width: 1.5rem;
+}
+
+.main_header_text {
+    background: linear-gradient(270deg,#1400FF, #CC00FF);
+    font-size: 41px;
+    font-family: Inter, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.promo_box {
+    /* background-color: #BD00FF; */
+    background: radial-gradient(#BD00FF, #fff);
+    padding: 20px;
+    text-align: center;
+    margin: 15px 0;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
+
+.main_header_cta_box {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.main_header_cta_box button {
+    border: none;
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 8px;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    background: linear-gradient(#BD00FF, #00FFF0);
+    color: #fff;
+}
+
+.main_header_cta_box button img {
+    width: 20px;
+}
+
+/* HEADER STYLES END */
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* MAIN STYLES START */
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.main_container{ 
+    padding: 8px 20px;
+    min-height: 100vh;
+    background: linear-gradient(#821afa33, #eaafff31);
+}
+
+/* ////////////////////////////TOP PICKED SERVICES START/////////////////////////////////////////// */
+
+.top_services_container h2 {
+    background: linear-gradient(#BD00FF, #FF416C);
+    background-clip: text;
+    color: transparent;
+    font-family: Inter, sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 1.1rem;
+    margin-top: 5rem;
+}
+
+.top_services_story {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+.top_services_listing_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2.5rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.top_service_box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top_service_icon {
+    width: 3.5rem;
+}
+
+.top_service_box p {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+}
+
+.top_service_arrow {
+    width: 2.5rem;
+}
+
+.top_services_more_btn_container button {
+    background-color: #BD00FF;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 2rem;
+    gap: 6px;
+}
+
+.top_services_more_btn_container button p {
+    font-family: Inter, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.top_services_more_btn_container button img {
+    width: 15px;
+}
+
+/* ////////////////////////////TOP PICKED SERVICES END/////////////////////////////////////////// */
+
+
+/* MAIN STYLES END */
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.footer_container{ 
+    padding: 8px 20px;
 }
