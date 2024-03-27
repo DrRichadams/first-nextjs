@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "username": "Doreen Chiriseri",
+        "username": "Johaness Mupako",
         "position": "Emerald Manager",
         "testimonial": "Working with Lufa Media has been an absolutebliss. The team is very friendly, and they reallydeliver in time. I also loved the way they communicate with you during and after the project.",
-        "user_pic": "/icon/user.png"
+        "user_pic": "/icons/user.png"
     },
 
     {
@@ -12,6 +12,6 @@
         "username": "Christine Masakadza",
         "position": "Manager at GPSLC",
         "testimonial": "Working with Lufa Media has been an absolutebliss. The team is very friendly, and they reallydeliver in time. I also loved the way they communicate with you during and after the project.",
-        "user_pic": "/icon/user.png"
+        "user_pic": "/icons/user.png"
     }
 ]

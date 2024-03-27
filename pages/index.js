@@ -1,6 +1,13 @@
 import React, { useState } from "react"
 import styles from "../styles/Home.module.css"
 import testimonials from "../data/testimonials.json"
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 export default function HomePage(props) {
 
@@ -65,25 +72,37 @@ export default function HomePage(props) {
               <button><p>Explore more services</p><img src="/icons/get_started.png" alt="" /></button>
             </div>
         </section>
-        <section>
-          <h3>TESTIMONIALS</h3>
-          <p>The quality of our work is unmatched, here’s what some of our clients have to say about our quality services</p>
+        <section className={styles.testimonials_container}>
+          <h3 className={styles.testimonial_title}>TESTIMONIALS</h3>
+          <p className={styles.testimonial_sub_title}>The quality of our work is unmatched, here’s what some of our clients have to say about our quality services</p>
           <div className={styles.testimonials_container}>
-              {
-                testimonials.map((item) => (
-                  <div className={styles.testimonial_box}>
+              <Swiper
+                 modules={[Navigation, Pagination, Scrollbar, A11y]}
+                //  spaceBetween={50}
+                 slidesPerView={1}
+                 navigation
+                 pagination={{ clickable: true }}
+                 className={styles.swiper_container}
+              >{
+                testimonials.map((item) => {
+                  return (
+                    <SwiperSlide className={styles.testimonial_box} key={item.id}>
                     <div className={styles.user_info_box}>
-                      <div className={styles.user_picture}><img src={item.user_pic} alt="" /></div>
+                      <div className={styles.user_picture}>
+                        <img src={item.user_pic} alt="" />
+                      </div>
                       <div className={styles.user_names}>
-                          <p>{item.username}</p>
-                          <p>{item.position}</p>
+                          <p className={styles.testi_name}>{item.username}</p>
+                          <p className={styles.testi_positions}>{item.position}</p>
                       </div>
                     </div>
-                    <p>{item.testimonial}</p>
+                    <p className={styles.testi_story}>{item.testimonial}</p>
                     <div className={styles.testi_controls_container}></div>
-                  </div>
-                ))
+                  </SwiperSlide>
+                  )
+                })
               }
+              </Swiper>
           </div>
         </section>
       </main>
