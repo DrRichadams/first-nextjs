@@ -82,10 +82,12 @@
 
 .promo_box {
     /* background-color: #BD00FF; */
-    background: radial-gradient(#BD00FF, #fff);
-    padding: 20px;
+    /* background: radial-gradient(#BD00FF, #fff); */
+    background: linear-gradient(to right, transparent, #BD00FF 60%, transparent);
+    /* padding: 20px; */
+    padding: 12px;
     text-align: center;
-    margin: 15px 0;
+    margin: 25px 0;
     color: #fff;
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -243,9 +245,9 @@
 
 
 .testimonial_box {
-    padding-bottom: 40px;
     background-color: #fff;
     padding: 8px;
+    padding-bottom: 50px;
     height: 50vh;
     border-radius: 8px;
 }
@@ -292,6 +294,77 @@
 
 
 /* ///////////////////////////////////TESTIMONIALS END/////////////////////////////////////////// */
+
+
+
+
+/* ///////////////////////////////////COMMON STYLES START/////////////////////////////////////////// */
+
+
+.common_questions_container {
+    min-height: 100vh;
+}
+
+.common_questions_titles h4 {
+    background: linear-gradient(#B50000, #415FFF);
+    font-family: Inter, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    background-clip: text;
+    color: transparent;
+}
+
+.common_questions_titles p {
+    font-family: Roboto, sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #686868;
+}
+
+.common_question_box {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.question_box{
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question_box button{
+    border: none;
+    background-color: transparent;
+}
+
+.question_box img{
+    width: 30px;
+    /* padding: 0 12px; */
+    margin-left: 12px;
+}
+
+.answer_box{
+    font-family: Roboto, sans-serif;
+    /* font-weight: 600; */
+    font-size: .8rem;
+    margin-right: 12px;
+    /* display: none; */
+}
+
+
+/* ///////////////////////////////////COMMON STYLES END/////////////////////////////////////////// */
 
 
 /* MAIN STYLES END */

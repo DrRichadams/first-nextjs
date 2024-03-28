@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Commercial Videos", "icon": "/icons/Commercial_Videos.png" },
+    { "id": 2, "name": "Graphic Designing", "icon": "/icons/Graphics_Designing.png" },
+    { "id": 3, "name": "Web Development", "icon": "/icons/Web_development.png" },
+    { "id": 4, "name": "UI / UX Design", "icon": "/icons/UX_UI_Design.png" },
+    { "id": 5, "name": "Social Media Management", "icon": "/icons/Social_media_managing.png" },
+    { "id": 6, "name": "SEO", "icon": "/icons/SEO.png" }
+]

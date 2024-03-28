@@ -1,27 +1,17 @@
 import React, { useState } from "react"
 import styles from "../styles/Home.module.css"
 import testimonials from "../data/testimonials.json"
+import top_services from "../data/top_services.json"
+import common_questions from "../data/common_questions.json"
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 export default function HomePage(props) {
-
-  const [ top_services ] = useState([
-    { id: 1, name: "Commercial Videos", icon: "/icons/Commercial_Videos.png" },
-    { id: 2, name: "Graphic Designing", icon: "/icons/Graphics_Designing.png" },
-    { id: 3, name: "Web Development", icon: "/icons/Web_development.png" },
-    { id: 4, name: "UI / UX Design", icon: "/icons/UX_UI_Design.png" },
-    { id: 5, name: "Social Media Management", icon: "/icons/Social_media_managing.png" },
-    { id: 6, name: "SEO", icon: "/icons/SEO.png" },
-  ])
-
-  // console.log(testimonials)
-
+  const [ openAns, setOpenAns ] = useState(1)
   return (
     <div>
       <nav className={styles.navigation_container}>
@@ -104,6 +94,31 @@ export default function HomePage(props) {
               }
               </Swiper>
           </div>
+        </section>
+        <section className={styles.common_questions_container}>
+            <div className={styles.common_questions_titles}>
+              <h4>Common Questions</h4>
+              <p>Getting started is fast and easy</p>
+            </div>
+            <div className={styles.common_questions_listing}>
+              {
+                common_questions.map((item) => (
+                  <div key={item.id} className={styles.common_question_box}>
+                    <div className={styles.question_box}>
+                      <p>{item.question}</p>
+                      <button onClick={() => setOpenAns(item.id)}>
+                        {
+                          openAns == item.id ?
+                          <img src="/icons/down_arrow2.png" alt="" />:
+                          <img src="/icons/arrow_right.png" alt="" />
+                        }
+                      </button>
+                    </div>
+                    { openAns == item.id ? <p className={styles.answer_box}>{item.answer}</p> : null }
+                  </div>
+                ))
+              }
+            </div>
         </section>
       </main>
       <footer className={styles.footer_container}>FOOTER</footer>
