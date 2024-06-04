@@ -9,12 +9,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import Image from "next/image"
+import working from "../public/working.png"
 
 export default function HomePage(props) {
   const [ openAns, setOpenAns ] = useState(1)
   return (
-    <div>
-      <nav className={styles.navigation_container}>
+    <div className="main_index_container">
+      {/* <nav className={styles.navigation_container}>
         <div className={styles.logo_box}>LUFA</div>
         <div className={styles.cta_menu_container}>
           <button>Get Started</button>
@@ -121,7 +123,9 @@ export default function HomePage(props) {
             </div>
         </section>
       </main>
-      <footer className={styles.footer_container}>FOOTER</footer>
+      <footer className={styles.footer_container}>FOOTER</footer> */}
+      <h1>SITE UNDER MAINTANANCE</h1>
+      <Image src={working} alt="working" width={500} height={500}/>
     </div>
   )
 }

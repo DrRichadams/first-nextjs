@@ -7,3 +7,21 @@
 .swiper-button-prev,.swiper-button-next {
   display: none !important;
 }
+
+.main_index_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  min-height: 100vh;
+}
+
+.main_index_container h1{
+  font-family: Inter;
+  font-size: 3rem;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background-clip: text;
+  color: transparent;
+}
